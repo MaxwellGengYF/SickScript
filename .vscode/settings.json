@@ -1,0 +1,33 @@
+{
+    "git.rebaseWhenSync": false,
+    "xmake.additionalConfigArguments": [
+        "--use_dlss=true"
+    ],
+    "dascript.experimental": true,
+    "dascript.server.connectTimeout": 10,
+    // "C_Cpp.errorSquiggles": "disabled",
+    "clangd.arguments": [
+        "--compile-commands-dir=.vscode",
+        "--log=error",
+        "--completion-style=bundled",
+        "--background-index",
+        "--background-index-priority=normal",
+        "--header-insertion=never",
+        "--pch-storage=memory"
+    ],
+    "xmake.runningTargetsArguments": {
+        "default": [
+            "--scene_path=D:/scene_data",
+            // "--use_vt"
+        ]
+    },
+    "Lua.diagnostics.disable": [
+        "undefined-global",
+        "lowercase-global",
+        "undefined-field",
+        "need-check-nil"
+    ],
+    "ccls.misc.compilationDatabaseDirectory": ".vscode",
+    "ccls.cache.directory": ".vscode/.ccls-cache",
+    "ccls.cache.fullLoadOnInitialize": true
+}

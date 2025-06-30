@@ -1,0 +1,5 @@
+/LuisaCompute
+/.xmake
+/.vscode/.cache
+/.vscode/compile_commands.json
+/build
